@@ -1,4 +1,107 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(3, 3, 35);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 260px;
+    min-height: 70vh;
+    background-color: rgb(27, 27, 70);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    margin-top: 5%;
+} 
+.main .main-img{
+    height: 40vh;
+}
+.main .main-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.main .main-header{
+    padding: 20px 0px;
+}
+.main .main-header h2{
+    color: white;
+    padding-bottom: 10px;
+}
+.main .main-header p{
+    color: lightgray;
+}
+.main .sub-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.main .sub-main .sub-main-eth{
+    display: flex;
+    flex-direction: row;
+    color: aquamarine;
+}
+.main .sub-main .sub-main-clock{
+    display: flex;
+    flex-direction: row;
+    color: lightgray;
+}
+.main .main-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    padding-top: 10px;    
+}
+.main .main-footer .main-footer-img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+.main .main-footer .main-footer-img img{
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.main .main-footer .main-footer-img img{
+    width: 100%;
+    height: 100%;
+}
+.main .main-footer p{
+    color: white;
+}
+.main .main-footer p span{
+    color: lightgray;
+}
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 20px;
+    color: white;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width: 375px){
+    .main{
+        width: 240px;
+        padding: 20px 20px;
+        margin-top: 10%;
+        font-size: 13px;
+    } 
+    .main .sub-main{
+        font-size: 15px;
+    }
+    
 }
